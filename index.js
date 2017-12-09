@@ -49,8 +49,11 @@ module.exports= function(text, lang, cb) {
 
   var sound_path = path.resolve(os.tmpdir(), path.normalize(text).replace(/[^a-z0-9]/gi, '_').toLowerCase() + '.mp3');
 
-  function play(sound_path) {
-    exec('mpg123 ' + sound_path, function() {
+  function play(sound_path, cb) {
+    exec('mplayer ' + sound_path, function(e) {
+      if (e)
+        return exec('mpg123 ' + sound_path, cb);
+      return cb();
     });
   }
 

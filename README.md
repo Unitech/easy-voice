@@ -1,7 +1,7 @@
 
 # Easy voice
 
-Requires mpg123 (`apt install mpg123`).
+Requires mplayer (`apt install mplayer`) or mpg123 (`apt install mpg123`)
 
 ## Usage
 
