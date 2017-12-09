@@ -1,0 +1,12 @@
+{
+  "name": "easy-voice",
+  "version": "0.1.0",
+  "description": "Easy Voice",
+  "main": "index.js",
+  "dependencies": {
+    "google-tts-api": "*"
+  },
+  "scripts": {},
+  "author": "Alexandre Strzelewicz",
+  "license": "MIT"
+}
